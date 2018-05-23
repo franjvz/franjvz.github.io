@@ -151,13 +151,13 @@ a:hover, a:focus, a:active {
   box-shadow: 0px 0px 5px #000;
 }
 
-.resume-date .text-muted {
-  display: block;
+#sideNav .navbar-brand .img-profile {
+  max-width: 11rem;
+  max-height: 11rem;
 }
 
-.lista-resumen {
-  font-size: 1.6rem;
-  font-family: 'Saira Extra Condensed', serif;
+.resume-date .text-muted {
+  display: block;
 }
 
 .list-inline-item {
@@ -176,10 +176,6 @@ a:hover, a:focus, a:active {
 
 #proyectos .devicons + .devicons {
   margin-left: .4em;
-}
-
-#proyectos .card {
-  border: 0;
 }
 
 #proyectos .card-footer, #proyectos .card-header {
@@ -217,12 +213,46 @@ a:hover, a:focus, a:active {
   justify-content: center;
 }
 
-#sideNav .navbar-brand .img-profile {
-  max-width: 11rem;
-  max-height: 11rem;
+.lista-resumen {
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1.5rem;
 }
 
-.subheading .fa {
+.datos-contacto {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.datos-contacto .fa {
   color: #343a40;
   margin-left: .7rem;
+}
+
+@media (max-width: 991px) {
+  #sobremi h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #sobremi h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .lista-resumen {
+    font-size: 1.3rem;
+  }
+  .datos-contacto {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .tlf-contacto, .correo-contacto {
+    display: block;
+  }
+  .datos-contacto .fa {
+    margin-left: 0;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
 }
