@@ -1,0 +1,91 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+@import "nav.scss";
+@import "resume-item.scss";
+@import "bootstrap-overrides.scss";
+// Components
+
+/* CUSTOM CSS */
+#sideNav{
+	box-shadow: 0px 0px 5px #000;
+}
+
+.resume-date .text-muted{
+  display:block;
+}
+
+.lista-resumen{
+  font-size:1.6rem;
+  font-family: 'Saira Extra Condensed', serif;
+}
+
+.list-inline-item{
+	text-align:center;
+}
+
+.list-inline-item .item-text{
+  display: block;
+  font-weight:400;
+  font-size:1rem;
+}
+
+#proyectos .devicons{
+	font-size:2rem;
+}
+
+#proyectos .devicons + .devicons{
+	margin-left:.4em;
+}
+
+#proyectos .card{
+	border: 0;
+}
+
+#proyectos .card-footer, #proyectos .card-header{
+	text-align:center;
+}
+
+#proyectos .card-img-wrapper{
+	overflow: hidden;
+}
+
+#proyectos .card-img-top{
+	cursor: pointer;
+	max-width:100%;
+
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#proyectos .card-img-top:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.modal-lg{
+	max-width:80%;
+}
+
+.img-modal{
+	margin:0 auto;
+	max-width: 100%;
+}
+
+.modal-footer{
+	justify-content: center;
+}
+
+#sideNav .navbar-brand .img-profile{
+	max-width: 11rem;
+	max-height: 11rem;
+}
+
+.subheading .fa{
+	color: #343a40;
+	margin-left:.7rem;
+}
